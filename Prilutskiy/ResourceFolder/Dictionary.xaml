@@ -1,0 +1,126 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="BackGroundColor" Color="#63a6a0"/>
+    <SolidColorBrush x:Key="BorderColor" Color="#b9257a"/>
+    <SolidColorBrush x:Key="AddColor" Color="#ef6a4c"/>
+
+    <Style x:Key="LabelNormal" TargetType="Label">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+    </Style>
+
+    <Style TargetType="TextBlock">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+    </Style>
+
+    <Style x:Key="LabelLogo" TargetType="Label">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+    </Style>
+
+    <Style TargetType="PasswordBox">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+    </Style>
+    
+    <Style TargetType="Button">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+    </Style>
+
+    <Style TargetType="Image" x:Key="LogoImage">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Source" Value="C:\Users\Прилуцкий\source\repos\Prilutskiy\Prilutskiy\ResourceFolder\ImageFolder\Logo.png"/>
+    </Style>
+
+    <Style x:Key="TopBorder" TargetType="Border">
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="CornerRadius" Value="17,17,0,0"/>
+    </Style>
+
+    <Style x:Key="MainBorder" TargetType="Border">
+        <Setter Property="CornerRadius" Value="17"/>
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+    </Style>
+
+    <Style TargetType="ComboBox">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+    </Style>
+    <Style TargetType="ComboBoxItem">
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+    </Style>
+    <Style TargetType="DataGrid">
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+    <Style TargetType="DataGridColumnHeader">
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+    <Style TargetType="MenuItem">
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+    <Style TargetType="DataGridCell">
+        <Setter Property="Background" Value="{DynamicResource BackGroundColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource AddColor}"/>
+        <Setter Property="FontFamily" Value="Century"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+</ResourceDictionary>
