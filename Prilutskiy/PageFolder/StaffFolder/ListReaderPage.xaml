@@ -45,37 +45,37 @@
                         <TextBlock Grid.Column="1" 
                             > 
                             <Run Text="Фамилия" FontWeight="Bold"/> 
-                            <Run Text="{Binding LastNameReader}"/>
+                            <Run Text="{Binding ReaderLastName}"/>
                         </TextBlock>
 
                         <TextBlock Grid.Row="1" Grid.Column="1" 
                                    > 
                             <Run Text="Имя" FontWeight="Bold"/> 
-                            <Run Text="{Binding FirstNameReader}"/>
+                            <Run Text="{Binding ReaderName}"/>
                         </TextBlock>
 
                         <TextBlock Grid.Row="2" Grid.Column="1" 
                                    > 
                             <Run Text="Отчество" FontWeight="Bold"/> 
-                            <Run Text="{Binding MiddleNameReader}"/>
+                            <Run Text="{Binding ReaderSecondName}"/>
                         </TextBlock>
 
                         <TextBlock Grid.Row="3" Grid.Column="1" 
                                    > 
                             <Run Text="Номер телефона" FontWeight="Bold"/> 
-                            <Run Text="{Binding NumberPhoneReader}"/>
+                            <Run Text="{Binding Phone}"/>
                         </TextBlock>
 
                         <TextBlock Grid.Row="4" Grid.Column="1" 
                                    > 
                             <Run Text="Рабочий телефон" FontWeight="Bold"/> 
-                            <Run Text="{Binding HomePhoneNumber}"/>
+                            <Run Text="{Binding WorkPhone}"/>
                         </TextBlock>
 
                         <TextBlock Grid.Row="4" Grid.Column="1" 
                                    > 
                         <Run Text="Дата рождения" FontWeight="Bold"/> 
-                        <Run Text="{Binding DateOfBirthReader, 
+                        <Run Text="{Binding DateOfBirth, 
                             StringFormat=dd.MM.yyyy}"/>
                         </TextBlock>
 
@@ -90,12 +90,12 @@
                             <MultiBinding StringFormat="{} Регион: {0}, Город: {1}, 
                                           Улица: {2}, Дом: {3},
                                           Корпус: {4}, Квартира: {5}"> 
-                                <Binding Path="Address.Region.NameRegion"/> 
-                                <Binding Path="Address.City.NameCity"/> 
-                                <Binding Path="Address.Street.NameStreet"/> 
-                                <Binding Path="Address.House"/> 
-                                <Binding Path="Address.Housing"/> 
-                                <Binding Path="Address.Flat"/> 
+                                <Binding Path="Address.Region.RegionName"/> 
+                                <Binding Path="Address.City.CityName"/> 
+                                <Binding Path="Address.Street.StreetName"/> 
+                                <Binding Path="Address.HouseNumber"/> 
+                                <Binding Path="Address.Frame"/> 
+                                <Binding Path="Address.FlatNumber"/> 
                             </MultiBinding>
                         </TextBlock>
 
