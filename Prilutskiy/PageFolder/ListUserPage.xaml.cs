@@ -31,12 +31,13 @@ namespace Prilutskiy.PageFolder
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void SearchTB_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            ListUserDG.ItemsSource = DBEntities.GetContext().User.
+                ToList().FindAll(x => x.UserName == SearchTB.Text).GroupBy(u => u.UserName);
         }
 
         private void ListUserDG_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -60,7 +61,16 @@ namespace Prilutskiy.PageFolder
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-
+            if (ListUserDG.SelectedItem == null)
+            {
+                MBClass.ErrorMB("Выберете пользователя " +
+                    "для удаления");
+            }
+            else
+            {
+                DBEntities.GetContext().User.Remove(ListUserDG.SelectedItem as User);
+                DBEntities.GetContext().SaveChanges();
+            }
         }
     }
 }

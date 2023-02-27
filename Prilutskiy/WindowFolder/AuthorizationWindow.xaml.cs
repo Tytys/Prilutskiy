@@ -1,6 +1,7 @@
 ﻿using Prilutskiy.ClassFolder;
 using Prilutskiy.DataFolder;
 using Prilutskiy.WindowFolder.AdminFolder;
+using Prilutskiy.WindowFolder.StaffFolder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,7 +67,8 @@ namespace Prilutskiy.WindowFolder
                                 Close();
                                 break;
                             case 2:
-                                MBClass.InfoMB("Сотрудник");
+                                new ReaderListWindow().Show();
+                                Close();
                                 break;
                         }
                     }

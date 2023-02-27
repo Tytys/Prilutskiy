@@ -34,7 +34,7 @@ namespace Prilutskiy.PageFolder
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MBClass.ExitMB();
         }
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
